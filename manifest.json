@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Grokipedia Redirect",
+  "version": "1.0.0",
+  "description": "Redirects Wikipedia URLs to Grokipedia when available",
+  "permissions": [
+    "webNavigation",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://en.wikipedia.org/*",
+    "https://grokipedia.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
